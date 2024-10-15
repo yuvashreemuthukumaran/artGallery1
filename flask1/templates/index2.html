@@ -1,0 +1,50 @@
+ <style>
+        :root {
+            --pink: #e84393;
+}
+.message {
+
+    display:flexbox;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 250px 50px;
+    background:url(background.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+p{
+    color: #e84393;
+    font-size:xx-large;
+}
+button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#e84393;
+    color: #fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+button:hover{
+    background: #333;
+}
+    </style>
+
+</head>
+<body>
+    <div class="message">
+        <h1>MESSAGE SENT</h1>
+        <p>Thankyou for visiting Our Gallery Page..! </p>
+        
+        <button type ="button">
+        <a href="{% url 'templates\index.html' %}">Back To Home</a>
+    </button>
+</div>
+        
+
+</body>
+</html> 
